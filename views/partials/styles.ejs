@@ -1,0 +1,203 @@
+<style>
+  body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  p {
+    margin-top: 16px;
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .top-bar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .tabs {
+    display: flex;
+  }
+
+  .tab {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    font-family: Inter;
+  }
+
+  .tab:hover {
+    border-bottom: 2px solid #fff;
+  }
+
+  .tabs > a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #logoutButton {
+    padding: 8px 12px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  #logoutButton:hover {
+    background-color: #c82333;
+  }
+
+  .add-button {
+    font-size: 18px;
+    display: block;
+    margin: 10px;
+    background-color: #007bff;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .create-blog {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Inter;
+    font-style: Inter;
+  }
+
+  .create-blog > form {
+    width: 80%;
+    font-size: 18px;
+  }
+
+  .add-from > input {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .create-blog > form > textarea {
+    width: 100%;
+    margin: 20px 0px;
+    padding: 10px;
+  }
+
+  .blog-card {
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+
+  .blog-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .blog-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .blog-body {
+    margin-bottom: 15px;
+  }
+
+  .blog-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .edit-button,
+  .delete-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .edit-button:hover {
+    background-color: #4caf50;
+    color: #fff;
+  }
+
+  .delete-button:hover {
+    background-color: #dc3545;
+    color: #fff;
+  }
+
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pagination a {
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+  }
+
+  .activePage {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+  }
+</style>

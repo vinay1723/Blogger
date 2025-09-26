@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Login</title>
+    <%- include('./partials/styles.ejs')%>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form method="POST" action="/login">
+        <h1>Login Page</h1>
+        <input type="email" name="email" placeholder="email" />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
