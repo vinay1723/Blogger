@@ -29,7 +29,7 @@ app.use(authCheck);
 // app.get("/home", (req, res) => {
 //   res.render("home");
 // });
-
+app.get("/", blogController.home);
 app.get("/home", blogController.home);
 app.use("/blogs", blogRouter);
 app.use(userRouter);
